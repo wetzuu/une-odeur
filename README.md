@@ -84,3 +84,9 @@ Fix possible alignment or UI issues.
 Proofread all the text in the website
 Output: Presentation-ready website.
 ```
+
+<div align="center">
+
+[View Documentation](https://docs.google.com/document/d/1pLe_UZsE1VrnQ8UqTMQihWNJyuZ87rBkiJsTmxLmkI8/edit?usp=sharing)
+
+</div>
