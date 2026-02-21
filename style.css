@@ -1,0 +1,70 @@
+/* Main Color */
+:root {
+    --wf-bg: #f5f5f5;
+    --wf-gray: rgb(214, 129, 129);
+    --wf-light-gray: #ffebeb;
+    --wf-border: #e9808e;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.navbar {
+    background-color: var(--wf-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 40px;
+    color: white;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;    
+    gap: 15px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-btn {
+    background: var(--wf-light-gray);
+    color: #666;
+    text-decoration: none;
+    padding: 6px 18px;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.search-bar {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 140px;
+}
+
+/* Reusable Components */
+.placeholder-box {
+    background-color: var(--wf-light-gray);
+    border: 1px solid var(--wf-border);
+}
+
+.section-divider {
+    border: 0;
+    border-top: 1px solid var(--wf-light-gray);
+    margin: 40px 0;
+}

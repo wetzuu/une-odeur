@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>une 'odeur | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+            padding: 20px 5%;
+        }
+
+        .hero-banner {
+            grid-column: 1 / -1;
+            height: 400px;
+            background: #eee;
+            display: flex;
+            align-items: flex-end;
+            padding: 40px;
+            cursor: pointer;
+            border: 1px solid var(--wf-border);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .fragrance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .perfume-card {
+            background: #fff;
+            border: 1px solid var(--wf-light-gray);
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s;
+        }
+
+        .perfume-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--wf-gray);
+        }
+
+        .card-img {
+            height: 150px;
+            background: var(--wf-light-gray);
+            margin-bottom: 10px;
+        }
+
+        .sidebar-news {
+            background: #fdfdfd;
+            padding: 15px;
+            border-left: 1px solid var(--wf-light-gray);
+        }
+
+        .news-item {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--wf-light-gray);
+            font-size: 0.85rem;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            border-bottom: 2px solid var(--wf-gray);
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <i class="fas fa-bars"></i>
+            <div class="nav-btn">ICON</div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-btn">News</a>
+            <a href="product.html" class="nav-btn">Notes</a>
+            <a href="account.html" class="nav-btn">Login</a>
+            <a href="#" class="nav-btn">Forum</a>
+        </nav>
+        <div class="nav-right">
+            <div class="search-bar"><input type="text" placeholder="Search Perfumes..."></div>
+            <a href="account.html" style="color:white;"><i class="far fa-user-circle"></i></a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <a href="perfume.html" class="hero-banner placeholder-box">
+            <div style="background: rgba(255,255,255,0.8); padding: 20px;">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni illo soluta modi maiores cumque iusto facere molestiae quis at facilis porro ut animi suscipit, ipsam, consectetur id magnam accusantium repudiandae!                </p>
+            </div>
+        </a>
+
+        <section class="content-area">
+            <h3 class="section-title">New Fragrances</h3>
+            <div class="fragrance-grid">
+                <a href="perfume.html" class="perfume-card">
+                    <div class="card-img"></div>
+                    <strong>Bleu de Chanel</strong>
+                    <p style="font-size: 12px; color: #777;">Chanel</p>
+                </a>
+                <a href="perfume.html" class="perfume-card">
+                    <div class="card-img"></div>
+                    <strong>Baccarat Rouge 540</strong>
+                    <p style="font-size: 12px; color: #777;">Maison Francis Kurkdjian</p>
+                </a>
+                <a href="perfume.html" class="perfume-card">
+                    <div class="card-img"></div>
+                    <strong>Santal 33</strong>
+                    <p style="font-size: 12px; color: #777;">Le Labo</p>
+                </a>
+                <a href="perfume.html" class="perfume-card">
+                    <div class="card-img"></div>
+                    <strong>Black Opium</strong>
+                    <p style="font-size: 12px; color: #777;">Yves Saint Laurent</p>
+                </a>
+            </div>
+        </section>
+
+        <aside class="sidebar-news">
+            <h3 class="section-title">Perfume News</h3>
+            <div class="news-item">
+                <p><strong>Interview:</strong> The Nose behind the new Dior collection.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>Awards:</strong> Top 10 Indie scents of 2025.</p>
+            </div>
+            <div class="news-item">
+                <p><strong>Trends:</strong> Why Vanilla is making a massive comeback.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer style="text-align: center; padding: 40px; color: #999; font-size: 12px;">
+        une 'odeur - Fragrance Discovery Engine
+    </footer>
+
+</body>
+</html>
