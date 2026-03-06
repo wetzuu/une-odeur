@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Santal 33 | une 'odeur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --wf-bg: #f5f5f5;
+            --wf-bg1: rgb(214, 129, 129); /* Header/Accent Red */
+            --wf-bg2: #ffebeb;            /* Light Background Tint */
+            --wf-border: #e9808e;         /* Border Color */
+
+            --acc-woody: #734a26; 
+            --acc-powdery: #b8ada1; 
+            --acc-leather: #5c4033; 
+            --acc-spicy: #8b2d0d; 
+            --acc-violet: #6a21a3;
+        }
+
+        .navbar { 
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 5%; background: white; border-bottom: 1px solid #ddd;
+        }
+        .nav-left { font-weight: bold; color: #555; font-size: 1.1rem; }
+        .nav-links { display: flex; gap: 35px; position: absolute; left: 50%; transform: translateX(-50%); }
+        .nav-btn { color: #555; text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+        .nav-right { color: #888; font-size: 0.95rem; }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+            padding: 20px 5%;
+        }
+
+        .product-view {
+            background: white;
+            padding: 40px;
+            border: 1px solid var(--wf-border);
+            border-radius: 8px;
+        }
+
+        .product-header {
+            display: flex; justify-content: space-between; align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .fragrance-title h1 { margin: 0; font-size: 2.2rem; font-weight: 400; }
+        .fragrance-title p { margin: 5px 0; color: #00a896; font-weight: 500; }
+
+        .brand-logo { width: 120px; text-align: center; font-size: 0.8rem; }
+        .brand-logo img { width: 100%; border: 1px solid #eee; margin-bottom: 5px; }
+
+        .data-grid { display: grid; grid-template-columns: 1fr 280px; gap: 40px; align-items: start; }
+        
+        .bottle-display { text-align: center; }
+        .bottle-img { max-height: 450px; width: auto; }
+
+        .accords-section h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #666; text-align: center; margin-bottom: 15px; }
+        .accord-bar { 
+            height: 26px; display: flex; align-items: center; padding-left: 15px; 
+            color: white; font-size: 0.85rem; margin-bottom: 6px; border-radius: 0 5px 5px 0;
+            font-weight: 500;
+        }
+
+        .sidebar { background: #fff; padding: 20px; border: 1px solid var(--wf-border); border-radius: 8px; height: fit-content; }
+        .section-title { font-size: 1.1rem; border-bottom: 2px solid var(--wf-bg1); margin-bottom: 15px; padding-bottom: 5px; text-transform: uppercase; color: var(--wf-bg1); }
+        .news-item { padding: 10px 0; border-bottom: 1px solid var(--wf-bg2); font-size: 0.85rem; }
+
+        .search-bar {
+            background: white;
+            display: flex;
+            align-items: center;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-left">
+        <p>une 'odeur</p>
+    </div>
+
+    <nav class="nav-links">
+        <a href="/index.html" class="nav-btn">News</a>
+        <a href="product.html" class="nav-btn">Notes</a>
+        <a href="/account/account.html" class="nav-btn">Login</a>
+    </nav>
+</header>
+
+    <div class="main-container">
+        <main class="product-view">
+            <div class="product-header">
+                <div class="fragrance-title">
+                    <h1>Santal 33 Le Labo</h1>
+                    <p>for women and men</p>
+                </div>
+                <div class="brand-logo">
+                    <div style="color: #666; margin-bottom: 5px;">Le Labo</div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Le_Labo_logo.svg/2560px-Le_Labo_logo.svg.png" alt="Le Labo">
+                </div>
+            </div>
+
+            <div class="data-grid">
+                <div class="bottle-display">
+                    <img src="/images/santal.png" class="bottle-img" alt="Santal 33 Bottle">
+                </div>
+
+                <div class="accords-section">
+                    <h3>main accords</h3>
+                    <div class="accord-bar" style="width: 100%; background: var(--acc-woody);">woody</div>
+                    <div class="accord-bar" style="width: 85%; background: var(--acc-powdery); color: #333;">powdery</div>
+                    <div class="accord-bar" style="width: 75%; background: var(--acc-leather);">leather</div>
+                    <div class="accord-bar" style="width: 65%; background: var(--acc-spicy);">warm spicy</div>
+                    <div class="accord-bar" style="width: 55%; background: var(--acc-violet);">violet</div>
+                    
+                    <div style="margin-top: 20px; text-align: center;">
+                        <button style="background: #004d40; color: white; border: none; padding: 8px 15px; border-radius: 4px; font-size: 0.8rem; cursor: pointer;">Search by accords</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="section-title">Latest News</div>
+            <div class="news-item">New Le Labo City Exclusive launched...</div>
+            <div class="news-item">Sandalwood: The history of the note...</div>
+            <div class="news-item">Top 10 Fall Fragrances 2026...</div>
+        </aside>
+    </div>
+
+</body>
+</html>

@@ -1,8 +1,8 @@
 /* Main Color */
 :root {
     --wf-bg: #f5f5f5;
-    --wf-gray: rgb(214, 129, 129);
-    --wf-light-gray: #ffebeb;
+    --wf-bg1: rgb(214, 129, 129);
+    --wf-bg2: #ffebeb;
     --wf-border: #e9808e;
 }
 
