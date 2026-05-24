@@ -1,0 +1,131 @@
+---
+import Base from '../layouts/Base.astro';
+import fragrances from '../data/fragrances.json';
+import FragranceCard from '../components/FragranceCard.astro';
+import NewsItem from '../components/NewsItem.astro';
+---
+
+<Base title="Home">
+
+  <style>
+    .main-container {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 30px;
+      padding: 20px 5%;
+    }
+    <style>
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+            padding: 20px 5%;
+        }
+
+        .hero-banner {
+            grid-column: 1 / -1;
+            height: 400px;
+            background: #eee;
+            display: flex;
+            align-items: flex-end;
+            padding: 40px;
+            cursor: pointer;
+            border: 1px solid var(--wf-border);
+            text-decoration: none;
+            color: inherit;
+            background-image: url("https://fimgs.net/himg/o.zhXIm74erUY.png");
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+            border-radius: 10px;
+        }
+
+        .fragrance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .perfume-card {
+            background: #fff;
+            border: 1px solid var(--wf-bg2);
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s;
+        }
+
+        .perfume-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--wf-bg1);
+        }
+
+        .card-img {
+            height: 150px;
+            background: var(--wf-bg2);
+            margin-bottom: 10px;
+            background-image: url("");
+        }
+
+        .sidebar-news {
+            background: #fdfdfd;
+            padding: 15px;
+            border-left: 1px solid var(--wf-bg2);
+        }
+
+        .news-item {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--wf-bg2);
+            font-size: 0.85rem;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            border-bottom: 2px solid var(--wf-bg1);
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        
+        .card-img img{
+            width: 110px;
+            height: auto;
+            padding-top: 2px;
+        }
+  </style>
+
+  <div class="main-container">
+
+    <a href="/" class="hero-banner placeholder-box">
+      <div style="background: rgba(255,255,255,0.8); padding: 20px;">
+        <h2>Rasasi's Liquid Gold</h2>
+        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </a>
+
+<section class="content-area">
+      <h3 class="section-title">Famous Fragrances</h3>
+      <div class="fragrance-grid">
+        {fragrances.map(frag => (
+          <FragranceCard
+            name={frag.name}
+            brand={frag.brand}
+            image={frag.image}
+            slug={frag.slug}
+          />
+        ))}
+      </div>
+    </section>
+
+    <aside class="sidebar-news">
+      <h3 class="section-title">Perfume News</h3>
+      <NewsItem label="Interview" text="The Nose behind the new Dior collection." />
+      <NewsItem label="Awards" text="Top 10 Indie scents of 2025." />
+      <NewsItem label="Trends" text="Why Vanilla is making a massive comeback." />
+    </aside>
+
+  </div>
+
+</Base>

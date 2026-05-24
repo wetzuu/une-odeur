@@ -1,0 +1,11 @@
+---
+const { name, brand, image, slug } = Astro.props;
+---
+
+<a href={`/frags/${slug}`} class="perfume-card">
+  <div class="card-img">
+    <img src={image} alt={name} />
+  </div>
+  <strong>{name}</strong>
+  <p style="font-size: 12px; color: #777;">{brand}</p>
+</a>

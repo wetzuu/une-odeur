@@ -1,0 +1,51 @@
+[
+  {
+    "slug": "bdc",
+    "name": "Bleu de Chanel",
+    "brand": "Chanel",
+    "image": "/bdc.png",
+    "accords": ["citrus", "amber", "woody", "fresh spicy", "aromatic"]
+  },
+  {
+    "slug": "bac",
+    "name": "Baccarat Rouge 540",
+    "brand": "Maison Francis Kurkdjian",
+    "image": "/bac.png",
+    "accords": ["amber", "woody", "sweet", "floral"]
+  },
+  {
+    "slug": "santal",
+    "name": "Santal 33",
+    "brand": "Le Labo",
+    "image": "/santal.png",
+    "accords": ["woody", "leather", "smoky", "warm spicy"]
+  },
+  {
+    "slug": "ysl",
+    "name": "Black Opium",
+    "brand": "Yves Saint Laurent",
+    "image": "/black opium.png",
+    "accords": ["sweet", "vanilla", "floral", "warm spicy"]
+  },
+  {
+    "slug": "aventus",
+    "name": "Aventus",
+    "brand": "Creed",
+    "image": "/aventus.png",
+    "accords": ["fruity", "woody", "smoky", "fresh"]
+  },
+  {
+    "slug": "sauvage",
+    "name": "Sauvage",
+    "brand": "Dior",
+    "image": "/sauvage.png",
+    "accords": ["fresh", "aromatic", "woody", "musky"]
+  },
+  {
+    "slug": "y",
+    "name": "Y Eau de Parfum",
+    "brand": "Yves Saint Laurent",
+    "image": "/y.png",
+    "accords": ["fresh", "woody", "aromatic", "sage"]
+  }
+]
