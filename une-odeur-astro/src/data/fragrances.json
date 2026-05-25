@@ -4,48 +4,55 @@
     "name": "Bleu de Chanel",
     "brand": "Chanel",
     "image": "/bdc.png",
-    "accords": ["citrus", "amber", "woody", "fresh spicy", "aromatic"]
+    "accords": ["citrus", "amber", "woody", "fresh spicy", "aromatic"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
   },
   {
     "slug": "bac",
     "name": "Baccarat Rouge 540",
     "brand": "Maison Francis Kurkdjian",
     "image": "/bac.png",
-    "accords": ["amber", "woody", "sweet", "floral"]
+    "accords": ["amber", "woody", "sweet", "floral"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
   },
   {
     "slug": "santal",
     "name": "Santal 33",
     "brand": "Le Labo",
     "image": "/santal.png",
-    "accords": ["woody", "leather", "smoky", "warm spicy"]
+    "accords": ["woody", "leather", "smoky", "warm spicy"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
   },
   {
     "slug": "ysl",
     "name": "Black Opium",
     "brand": "Yves Saint Laurent",
     "image": "/black opium.png",
-    "accords": ["sweet", "vanilla", "floral", "warm spicy"]
+    "accords": ["sweet", "vanilla", "floral", "warm spicy"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
   },
   {
     "slug": "aventus",
     "name": "Aventus",
     "brand": "Creed",
     "image": "/aventus.png",
-    "accords": ["fruity", "woody", "smoky", "fresh"]
+    "accords": ["fruity", "woody", "smoky", "fresh"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
   },
   {
     "slug": "sauvage",
     "name": "Sauvage",
     "brand": "Dior",
     "image": "/sauvage.png",
-    "accords": ["fresh", "aromatic", "woody", "musky"]
+    "accords": ["fresh", "aromatic", "woody", "musky"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
   },
   {
     "slug": "y",
     "name": "Y Eau de Parfum",
     "brand": "Yves Saint Laurent",
     "image": "/y.png",
-    "accords": ["fresh", "woody", "aromatic", "sage"]
+    "accords": ["fresh", "woody", "aromatic", "sage"],
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
   }
 ]

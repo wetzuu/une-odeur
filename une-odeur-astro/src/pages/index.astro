@@ -7,13 +7,6 @@ import NewsItem from '../components/NewsItem.astro';
 
 <Base title="Home">
 
-  <style>
-    .main-container {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 30px;
-      padding: 20px 5%;
-    }
     <style>
         .main-container {
             display: grid;
@@ -60,14 +53,7 @@ import NewsItem from '../components/NewsItem.astro';
             transform: translateY(-5px);
             border-color: var(--wf-bg1);
         }
-
-        .card-img {
-            height: 150px;
-            background: var(--wf-bg2);
-            margin-bottom: 10px;
-            background-image: url("");
-        }
-
+        
         .sidebar-news {
             background: #fdfdfd;
             padding: 15px;
@@ -86,13 +72,6 @@ import NewsItem from '../components/NewsItem.astro';
             margin-bottom: 20px;
             padding-bottom: 5px;
             text-transform: uppercase;
-        }
-
-        
-        .card-img img{
-            width: 110px;
-            height: auto;
-            padding-top: 2px;
         }
   </style>
 

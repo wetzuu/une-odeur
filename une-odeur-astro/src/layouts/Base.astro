@@ -1,5 +1,6 @@
 ---
 const { title } = Astro.props;
+import '../../styles/global.css'
 ---
 
 <!DOCTYPE html>
@@ -18,20 +19,12 @@ const { title } = Astro.props;
       <a href="https://www.fragrantica.com/notes/" class="nav-btn">Notes</a>
       <a href="/account" class="nav-btn">Login</a>
     </nav>
-    <div class="nav-right">
-      <div class="search-bar">
-        <input type="text" placeholder="Search Perfumes..." />
-      </div>
-      <a href="/account" style="color:white;">
-        <i class="far fa-user-circle"></i>
-      </a>
-    </div>
     </header>
 
     <slot />
 
     <footer style="text-align:center; padding:40px; color:#999; font-size:12px;">
-        une 'odeur - Abraham, Lauren | Cinco, Timothy | Serrano, Matthew
+        une 'odeur
     </footer>
 
     </body>

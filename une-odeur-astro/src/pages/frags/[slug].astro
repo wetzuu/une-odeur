@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+import fragrances from '../../data/fragrances.json';
+
+export function getStaticPaths() {
+  return fragrances.map(frag => ({
+    params: { slug: frag.slug },
+    props: { frag }
+  }));
+}
+
+const { frag } = Astro.props;
+---
+
+<Base title={frag.name}>
+  <div class="frag-page">
+    
+    <div class="frag-top">
+      <img src={frag.image} alt={frag.name} class="frag-img" />
+      <div class="frag-info">
+        <p class="frag-brand">{frag.brand}</p>
+        <h1 class="frag-name">{frag.name}</h1>
+        <div class="accords">
+          {frag.accords.map(accord => (
+            <span class="accord-tag">{accord}</span>
+          ))}
+        </div>
+        <div class ="frag-description" style="margin-top:20px; line-height:1.6; color:#555;">
+          {frag.description}
+          </div>
+      </div>
+    </div>
+
+  </div>
+</Base>
+
+<style>
+  .frag-page {
+    padding: 40px 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .frag-top {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .frag-img {
+    width: 250px;
+    height: auto;
+  }
+
+  .frag-brand {
+    font-size: 0.9rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .frag-name {
+    font-size: 2.5rem;
+    margin: 0 0 24px 0;
+  }
+
+  .accords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .accord-tag {
+    background: var(--wf-light);
+    border: 1px solid var(--wf-border);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #555;
+  }
+</style>
