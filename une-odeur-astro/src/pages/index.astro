@@ -26,7 +26,7 @@ import NewsItem from '../components/NewsItem.astro';
             border: 1px solid var(--wf-border);
             text-decoration: none;
             color: inherit;
-            background-image: url("https://fimgs.net/himg/o.zhXIm74erUY.png");
+            background-image: url("../public/hero.jpg");
             background-size: cover;
             background-position: center;
             min-height: 400px;
@@ -78,9 +78,11 @@ import NewsItem from '../components/NewsItem.astro';
   <div class="main-container">
 
     <a href="/" class="hero-banner placeholder-box">
-      <div style="background: rgba(255,255,255,0.8); padding: 20px;">
-        <h2>Rasasi's Liquid Gold</h2>
-        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div style="background: rgba(56, 56, 56, 0.8); padding: 20px; border-radius: 20px;">
+        <h2 style = "color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">une' odeur</h2>
+        <p style = "color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style:italic">[feminine] /ɔdœʀ/</p>
+        <p style = "color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style:italic">&bull; transitive website</p>
+        <p style = "color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">a site focused on fragrance discovery and reviews of local and international fragrances.</p>
       </div>
     </a>
 
@@ -99,10 +101,11 @@ import NewsItem from '../components/NewsItem.astro';
     </section>
 
     <aside class="sidebar-news">
-      <h3 class="section-title">Perfume News</h3>
-      <NewsItem label="Interview" text="The Nose behind the new Dior collection." />
-      <NewsItem label="Awards" text="Top 10 Indie scents of 2025." />
-      <NewsItem label="Trends" text="Why Vanilla is making a massive comeback." />
+      <h3 class="section-title">Recent Recommendations</h3>
+      <NewsItem label="Enzo Scents" text="Well-performing fragrances of decent quality on a budget."/>
+      <NewsItem label="Scentsmith" text="Offers great selection of fragrances for some niche fragrances, while boasting great performance."/>
+      <NewsItem label="Symmetry Labs" text="Premium-quality dupes with decent longevity."/>
+      <NewsItem label="Feralde" text="Extremely well-performing dupe fragrances for its price. Exceptionally curated."/>
     </aside>
 
   </div>

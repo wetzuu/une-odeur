@@ -27,7 +27,7 @@
     "slug": "ysl",
     "name": "Black Opium",
     "brand": "Yves Saint Laurent",
-    "image": "/black opium.png",
+    "image": "/blackOpium.png",
     "accords": ["sweet", "vanilla", "floral", "warm spicy"],
     "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." 
   },
