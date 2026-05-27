@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product View | une 'odeur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .product-container { padding: 40px 8%; }
+        
+        .product-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .brand-logo-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            text-align: center;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr 250px;
+            gap: 40px;
+        }
+
+        .bar { height: 15px; background: var(--wf-light-gray); margin-bottom: 10px; width: 100%; }
+        .hero-img { height: 350px; width: 100%; margin-bottom: 15px; }
+        .sub-img { height: 120px; width: 100%; }
+        .rev-box { height: 90px; margin-bottom: 15px; width: 100%; }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <i class="fas fa-bars"></i>
+            <div class="nav-btn">ICON</div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-btn">News</a>
+            <a href="product.html" class="nav-btn">Notes</a>
+            <a href="account.html" class="nav-btn">Login</a>
+            <a href="#" class="nav-btn">Forum</a>
+        </nav>
+        <div class="nav-right">
+            <div class="search-bar"><input type="text" placeholder="Search Perfumes..."></div>
+            <a href="account.html" style="color:white;"><i class="far fa-user-circle"></i></a>
+        </div>
+    </header>
+
+    <div class="product-container">
+        <div class="product-header">
+            <h1>[PERFUME NAME] - [BRAND]</h1>
+            <div class="placeholder-box brand-logo-circle">BRAND<br>LOGO</div>
+        </div>
+
+        <div class="main-grid">
+            <div class="scent-stats">
+                <h3>SCENT NOTES</h3>
+                <div class="bar" style="width: 90%"></div>
+                <div class="bar" style="width: 75%"></div>
+                <div class="bar" style="width: 40%"></div>
+                <br>
+                <h3>OCCASIONS</h3>
+                <div class="bar" style="width: 60%"></div>
+                <div class="bar" style="width: 30%"></div>
+            </div>
+
+            <div class="visuals">
+                <div class="placeholder-box hero-img"></div>
+                <div class="placeholder-box sub-img"></div>
+            </div>
+
+            <div class="reviews">
+                <h3>REVIEWS</h3>
+                <div class="placeholder-box rev-box"></div>
+                <div class="placeholder-box rev-box"></div>
+                <div class="placeholder-box rev-box"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
