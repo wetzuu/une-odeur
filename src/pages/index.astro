@@ -23,7 +23,7 @@ import NewsItem from '../components/NewsItem.astro';
             align-items: flex-end;
             padding: 40px;
             cursor: pointer;
-            border: 1px solid var(--wf-border);
+            border: 1px solid var(--heading);
             text-decoration: none;
             color: inherit;
             background-image: url("/hero.jpg");
@@ -40,7 +40,7 @@ import NewsItem from '../components/NewsItem.astro';
             transform: scale(1.01) translateY(-6px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 
                        0 0 30px rgba(180, 140, 60, 0.2);
-            border-color: var(--wf-bg1);
+            border-color: var(--accent);
         }
 
         .fragrance-grid {
@@ -51,8 +51,9 @@ import NewsItem from '../components/NewsItem.astro';
 
         .perfume-card {
             background: #fff;
-            border: 1px solid var(--wf-bg2);
+            border: 1px solid var(--surface);
             padding: 10px;
+            min-height: 200px;
             text-align: center;
             text-decoration: none;
             color: #333;
@@ -61,12 +62,12 @@ import NewsItem from '../components/NewsItem.astro';
 
         .perfume-card:hover {
             transform: translateY(-5px);
-            border-color: var(--wf-bg1);
+            border-color: var(--accent);
         }
 
         .section-title {
             font-size: 1.2rem;
-            border-bottom: 2px solid var(--wf-bg1);
+            border-bottom: 2px solid var(--accent);
             margin-bottom: 20px;
             padding-bottom: 5px;
             text-transform: uppercase;
@@ -85,7 +86,7 @@ import NewsItem from '../components/NewsItem.astro';
     </a>
 
 <section class="content-area">
-      <h3 class="section-title">Famous Fragrances</h3>
+      <h3 class="section-title">Da Fragrances</h3>
       <div class="fragrance-grid">
         {fragrances.map(frag => (
           <FragranceCard

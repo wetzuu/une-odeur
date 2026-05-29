@@ -1,23 +1,24 @@
 @import "tailwindcss";
 
 :root {
-    --wf-bg: #c9c9c9;
-    --wf-bg1: rgba(167, 164, 164, 0.247);
-    --wf-bg2: #eeeeee;
-    --wf-border: #303030;
+    --bg: #FAF6EF;
+    --surface: #F0E6D2;
+    --accent: #C49A5A;
+    --text: #7A5C34;
+    --heading: #3D2B1A;
 }
 
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #fff;
-    color: #333;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 .navbar {
     border: 2px;
     border-style: solid;
-    border-color: var(--wf-border);
+    border-color: var(--heading);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,72 +27,79 @@ body {
 }
 
 .nav-btn {
-    background-color: var(--wf-bg1);
+    background: var(--bg);
     border: 1px;
     border-style: solid;
-    border-color: var(--wf-border);
-    color: #666;
+    border-color: var(--heading);
+    color: var(--text);
     text-decoration: none;
     padding: 6px 18px;
     font-size: 16px;
     border-radius: 4px;
     font-weight: bold;
     justify-content: center;
-    align-items: center;
-    display: flexbox;
 }
 
-/* Reusable Components */
 .placeholder-box {
-    background-color: var(--wf-light-gray);
-    border: 1px solid var(--wf-border);
+    background-color: var(--surface);
+    border: 1px solid var(--heading);
 }
 
 .section-divider {
     border: 0;
-    border-top: 1px solid var(--wf-light-gray);
+    border-top: 1px solid var(--surface);
     margin: 40px 0;
 }
 
 .card-img img{
-    width: 110px;
-    height: auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     padding-top: 2px;
 }
 
 .card-img {
-    height: 150px;
+    height: 200px;
+    border-radius: 8px;
     overflow: hidden;
-    background: var(--wf-bg2);
+    background: var(--surface);
     margin-bottom: 10px;
     justify-content: center;
+    align-items: center;
     display: flex;
 }
 
 .sidebar-news {
-     background: #fdfdfd;
+    background: #fdfdfd;
     padding: 15px;
     margin: 8px;
-    border-left: 1px solid var(--wf-bg2); 
+    border-left: 1px solid var(--surface);
 }
 
+/* NEWS SIDE BAR CSS */
 .news-label {
-  font-weight: bold;
-  display: inline-block; /* required for transform to work on inline elements */
-  transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
+    background: var(--header);
+    border: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
 }
 
 .NewsItem:hover .news-label {
-  transform: translateX(6px);
-  color: var(--wf-bg1);         /* shifts to your gold accent on hover */
-  letter-spacing: 0.04em;       /* subtle text expansion */
+    transform: translateX(6px);
+    color: var(--accent);
+    letter-spacing: 0.04em;
 }
 
 .news-text {
-  transition: opacity 0.3s ease;
-  opacity: 0.75;
+    transition: opacity 0.3s ease;
+    opacity: 0.75;
 }
 
 .NewsItem:hover .news-text {
-  opacity: 1;
+    opacity: 1;
 }
