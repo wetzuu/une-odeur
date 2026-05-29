@@ -31,6 +31,16 @@ import NewsItem from '../components/NewsItem.astro';
             background-position: center;
             min-height: 400px;
             border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+            transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+
+        .hero-banner:hover {
+            transform: scale(1.01) translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 
+                       0 0 30px rgba(180, 140, 60, 0.2);
+            border-color: var(--wf-bg1);
         }
 
         .fragrance-grid {
@@ -52,18 +62,6 @@ import NewsItem from '../components/NewsItem.astro';
         .perfume-card:hover {
             transform: translateY(-5px);
             border-color: var(--wf-bg1);
-        }
-        
-        .sidebar-news {
-            background: #fdfdfd;
-            padding: 15px;
-            border-left: 1px solid var(--wf-bg2);
-        }
-
-        .news-item {
-            padding: 10px 0;
-            border-bottom: 1px solid var(--wf-bg2);
-            font-size: 0.85rem;
         }
 
         .section-title {
@@ -102,10 +100,10 @@ import NewsItem from '../components/NewsItem.astro';
 
     <aside class="sidebar-news">
       <h3 class="section-title">Recent Recommendations</h3>
-      <NewsItem label="Enzo Scents" text="Well-performing fragrances of decent quality on a budget."/>
-      <NewsItem label="Scentsmith" text="Offers great selection of fragrances for some niche fragrances, while boasting great performance."/>
-      <NewsItem label="Symmetry Labs" text="Premium-quality dupes with decent longevity."/>
-      <NewsItem label="Feralde" text="Extremely well-performing dupe fragrances for its price. Exceptionally curated."/>
+      <NewsItem label="Enzo Scents" text="Well-performing fragrances of decent quality on a budget." href = "https://shopee.ph/enzoscents?gad_source=1&gad_campaignid=23759540288&gclid=CjwKCAjw8uTQBhAdEiwAVvtJykFHTtDTPD_sGXzQ5vOajJXDOCROn0fLjFrzqRwxPsiDPEGn0LxWfRoCDboQAvD_BwE" />
+      <NewsItem label="Scentsmith Perfumery" text="Offers great selection of fragrances for some niche fragrances, while boasting great performance." href = "https://shopee.ph/scentsmithperfumeryinc?gad_source=1&gad_campaignid=23759540288&gclid=CjwKCAjw8uTQBhAdEiwAVvtJyiOqDrd5eP8dDWAO1l66IlwuYVAEbPbAkWisiQLQdYPv8AzhkvS0RBoCIQIQAvD_BwE" />
+      <NewsItem label="Symmetry Labs" text="Premium-quality dupes with decent longevity." href = "https://shopee.ph/symmetrylabph" />
+      <NewsItem label="Feralde" text="Extremely well-performing dupe fragrances for its price. Exceptionally curated." href = "https://shopee.ph/feralde.ph" />
     </aside>
 
   </div>

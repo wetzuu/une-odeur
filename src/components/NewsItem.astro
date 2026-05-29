@@ -1,7 +1,9 @@
 ---
-const { label, text } = Astro.props;
+const { label, text, href = "#" } = Astro.props;
 ---
 
-<div class="news-item">
-  <p><strong>{label}:</strong> {text}</p>
+<div class="NewsItem">
+  <a href={href} class="news-item" target="_blank" rel="noopener noreferrer">
+  <span class="news-label">{label}</span>
+  <p class = "news-text">{text}</p>
 </div>

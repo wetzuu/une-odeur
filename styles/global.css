@@ -4,33 +4,41 @@
     --wf-bg: #c9c9c9;
     --wf-bg1: rgba(167, 164, 164, 0.247);
     --wf-bg2: #eeeeee;
-    --wf-border: #c0bebe;
+    --wf-border: #303030;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     margin: 0;
     background-color: #fff;
     color: #333;
 }
 
 .navbar {
-    background-color: var(--wf-gray);
+    border: 2px;
+    border-style: solid;
+    border-color: var(--wf-border);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 5px;
     padding: 25px 40px;
-    color: white;
 }
 
 .nav-btn {
-    background: var(--wf-light-gray);
+    background-color: var(--wf-bg1);
+    border: 1px;
+    border-style: solid;
+    border-color: var(--wf-border);
     color: #666;
     text-decoration: none;
     padding: 6px 18px;
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 4px;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
 }
 
 /* Reusable Components */
@@ -58,4 +66,32 @@ body {
     margin-bottom: 10px;
     justify-content: center;
     display: flex;
+}
+
+.sidebar-news {
+     background: #fdfdfd;
+    padding: 15px;
+    margin: 8px;
+    border-left: 1px solid var(--wf-bg2); 
+}
+
+.news-label {
+  font-weight: bold;
+  display: inline-block; /* required for transform to work on inline elements */
+  transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.NewsItem:hover .news-label {
+  transform: translateX(6px);
+  color: var(--wf-bg1);         /* shifts to your gold accent on hover */
+  letter-spacing: 0.04em;       /* subtle text expansion */
+}
+
+.news-text {
+  transition: opacity 0.3s ease;
+  opacity: 0.75;
+}
+
+.NewsItem:hover .news-text {
+  opacity: 1;
 }
