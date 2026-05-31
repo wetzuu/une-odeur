@@ -15,31 +15,6 @@ body {
     color: var(--text);
 }
 
-.navbar {
-    border: 2px;
-    border-style: solid;
-    border-color: var(--heading);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5px;
-    padding: 25px 40px;
-}
-
-.nav-btn {
-    background: var(--bg);
-    border: 1px;
-    border-style: solid;
-    border-color: var(--heading);
-    color: var(--text);
-    text-decoration: none;
-    padding: 6px 18px;
-    font-size: 16px;
-    border-radius: 4px;
-    font-weight: bold;
-    justify-content: center;
-}
-
 .placeholder-box {
     background-color: var(--surface);
     border: 1px solid var(--heading);

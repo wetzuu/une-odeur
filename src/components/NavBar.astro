@@ -1,2 +1,71 @@
 ---
-const {}
+---
+
+<header class="navbar">
+
+  <p class = "nav-brand">une 'odeur </p>
+  <p class = "nav-brandtag">/ɔdœʀ/</p>
+    <nav class="nav-links">
+      <a href="#" class="nav-btn">Home</a>
+      <a href="#" class="nav-btn">Notes</a>
+      <a href="#" class="nav-btn">Login</a>
+  </nav>
+</header>
+
+<style>
+    
+.navbar {
+    background: rgba(250, 246, 239, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin: 0;
+    border-bottom: 1px solid var(--heading);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-brand {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+  }
+
+.nav-brandtag {
+    font-size: 12px;
+    color: var(--accent);
+    margin-left: 4px;
+    font-style: italic;
+  }
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .nav-btn {
+    background: transparent;
+    border: none;
+    color: var(--text);
+    text-decoration: none;
+    padding: 6px 14px;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-btn:hover {
+    background: var(--surface);
+    color: var(--heading);
+}
+
+</style>

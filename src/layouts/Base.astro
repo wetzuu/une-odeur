@@ -1,6 +1,7 @@
 ---
 const { title } = Astro.props;
 import '../../styles/global.css'
+import NavBar from '../components/NavBar.astro';
 ---
 
 <!DOCTYPE html>
@@ -11,16 +12,9 @@ import '../../styles/global.css'
         <title>{title}</title>
         <link rel="stylesheet" href="/styles/global.css" />
         </head>
-
     <body>
-      <header class="navbar">
-      <nav class="nav-links">
-        <a href="/" class="nav-btn">News</a>
-        <a href="https://www.fragrantica.com/notes/" class="nav-btn">Notes</a>
-        <a href="/account" class="nav-btn">Login</a>
-    </nav>
-    </header>
 
+    <NavBar />
     <slot />
 
     <footer style="text-align:center; padding:40px; color:#999; font-size:12px;">
